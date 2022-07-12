@@ -1,0 +1,12 @@
+# postgres root pw: 7mhnmSltSg
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: lnmux
+spec:
+  containers:
+  - name: lnmux
+    image: thinkmassive/lnmuxd:latest
+    ports:
+    - containerPort: 19090
